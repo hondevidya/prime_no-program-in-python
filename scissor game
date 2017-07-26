@@ -1,0 +1,20 @@
+from random import *
+player1=input('rock(r),paper(p),scissors(s)?')
+print(player1,'Vs',end=' ')
+chosen=randint(1,3)
+
+if(chosen==1):
+    computer='r'
+    print(computer)
+elif(chosen==2):
+    computer='p'
+    print(computer)
+else:
+    computer='s'
+    print(computer)
+if(player1==computer):
+    print('draw')
+if(player1=='r' and computer=='p'):
+    print('player1 win')
+if(player1=='r' and computer=='s'):
+    print('player1 win')
