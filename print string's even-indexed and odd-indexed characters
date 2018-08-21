@@ -1,0 +1,14 @@
+t=int(input())
+k=""
+l=""
+if(1<=t<=10):
+    while(t>0):
+        s=input()
+        if(2<=len(s)<=10000):
+            for i in range(0,len(s)):
+                if(i%2==0):k+=s[i]
+                else:l+=s[i]
+            print(str(k),str(l))
+        t=t-1
+        k=""
+        l=""
